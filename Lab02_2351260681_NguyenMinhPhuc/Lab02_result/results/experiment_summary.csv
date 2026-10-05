@@ -1,5 +1,0 @@
-Experiment,Feature,Endpoint,Accuracy (%)
-E1 - Without Endpoint,MFCC 13,No,100.0
-E1 - With Endpoint,MFCC 13,Yes,100.0
-E2 - MFCC 13,MFCC 13,Yes,100.0
-E2 - MFCC + Delta,MFCC 13 + Delta,Yes,100.0
