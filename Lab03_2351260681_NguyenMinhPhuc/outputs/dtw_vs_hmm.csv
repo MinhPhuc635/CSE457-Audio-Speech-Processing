@@ -1,0 +1,3 @@
+model,accuracy,mean_test_seconds,mean_train_seconds
+DTW,1.0,0.09634894999990137,
+HMM,1.0,0.0010475800001586322,0.012712520000241057

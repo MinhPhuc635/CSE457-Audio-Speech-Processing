@@ -1,0 +1,7 @@
+# Word inventory / lexicon
+
+dong	đóng
+dung	dừng
+len	lên
+mo	mở
+xuong	xuống
