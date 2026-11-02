@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+soundfile
+pandas
+ipython
+jupyter
+piper-tts>=1.8.0

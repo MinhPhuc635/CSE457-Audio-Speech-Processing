@@ -1,0 +1,4 @@
+state,duration_fraction,f0_rule,f1_rule,energy,transition
+onset,0.20,word-conditioned base F0,0.82 x vowel F1,0.55,onset -> vowel
+vowel,0.60,base F0 + tone-conditioned offset,vowel F1,1.00,vowel -> coda
+coda,0.20,base F0 + tone-conditioned offset,1.04 x vowel F1,0.72,coda -> next word onset

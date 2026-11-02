@@ -1,0 +1,4 @@
+﻿input_text,expected_tokens
+Mời khách hàng số 23 đến quầy 5.,mời|khách|hàng|số|hai|ba|đến|quầy|năm
+Mời khách hàng số 08 đến quầy 2.,mời|khách|hàng|số|không|tám|đến|quầy|hai
+Mời khách hàng số 15 đến quầy 9.,mời|khách|hàng|số|một|năm|đến|quầy|chín

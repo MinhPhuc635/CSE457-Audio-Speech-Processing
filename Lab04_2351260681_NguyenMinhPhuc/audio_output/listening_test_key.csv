@@ -1,0 +1,10 @@
+audio_id,sentence_id,method
+S1_A1,1,Neural Piper
+S1_A2,1,HMM demo
+S1_A3,1,Concatenation
+S2_A1,2,Concatenation
+S2_A2,2,HMM demo
+S2_A3,2,Neural Piper
+S3_A1,3,Concatenation
+S3_A2,3,Neural Piper
+S3_A3,3,HMM demo

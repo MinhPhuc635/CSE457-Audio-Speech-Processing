@@ -1,0 +1,19 @@
+# Keep the local model weights out of Git, including nested project copies.
+**/models/*.onnx
+**/models/*.onnx.json
+
+# Local working copies remain at the workspace root; the submitted versions
+# live under Lab04_2351260681_NguyenMinhPhuc/.
+/Lab04.ipynb
+/Bao_cao_Lab04.docx
+/Bao_cao_Lab04.pdf
+/Lab 4.pdf
+/audio_output/
+/hmm_demo/
+/lab4_data/
+/models/
+/build_report.py
+/build_report_pdf.py
+/hmm_tts_backend.py
+/neural_tts_backend.py
+/requirements.txt
