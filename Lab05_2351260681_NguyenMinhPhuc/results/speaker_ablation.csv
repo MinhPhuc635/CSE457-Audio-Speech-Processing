@@ -1,0 +1,13 @@
+﻿features,CMN,enrollment_per_speaker,accuracy
+mfcc,False,1,1.0
+mfcc,False,2,1.0
+mfcc,False,4,1.0
+mfcc,True,1,0.8333333333333334
+mfcc,True,2,0.8333333333333334
+mfcc,True,4,0.6666666666666666
+mfcc_delta,False,1,1.0
+mfcc_delta,False,2,1.0
+mfcc_delta,False,4,1.0
+mfcc_delta,True,1,0.8333333333333334
+mfcc_delta,True,2,1.0
+mfcc_delta,True,4,0.6666666666666666
