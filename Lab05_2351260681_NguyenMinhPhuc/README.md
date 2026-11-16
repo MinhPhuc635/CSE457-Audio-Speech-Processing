@@ -1,28 +1,26 @@
 # Lab 5 — CSE457
 
-**Sinh viên:** Nguyễn Minh Phúc (2351260681)
+## Project structure
 
-## Cấu trúc
+- `Lab5.ipynb`: Tasks 0–8; run the notebook cells from top to bottom.
+- `lab5_dataset/`: clean speech, noise recordings, and source-separation WAV files. The dataset does not include a manifest or mixing-matrix metadata.
+- `results/audio/`: noisy, enhanced, mixture, and separated audio. Separated signals are peak-normalized before saving; the two mixture channels use a shared gain.
+- `results/figures/`: spectrograms, speaker-ID confusion matrix, FAR–FRR plot, and ICA correlation figures.
+- `results/*.csv`: enhancement, speaker-identification, and ablation results.
+- `Bao_cao_Lab05.docx` and `Bao_cao_Lab05.pdf`: the lab report, including answers to all 12 report questions.
 
-- `Lab5.ipynb`: notebook theo Task 0–8; chạy toàn bộ cell tuần tự.
-- `lab5_dataset/`: clean, noise và separation WAV. Dataset hiện không có manifest hoặc mixing-matrix metadata.
-- `results/audio/`: noisy, enhanced, mixture và separated WAV; separated được peak-normalize, hai mixture microphone dùng chung gain.
-- `results/figures/`: spectrogram, confusion matrix, FAR–FRR, tương quan ICA.
-- `results/*.csv`: số liệu enhancement, speaker-ID và ablation.
-- `Bao_cao_Lab05.docx`: report cập nhật theo dataset hiện tại, gồm câu trả lời 12 câu hỏi ở cuối.
+## Environment
 
-## Môi trường
-
-Python 3.10+; dependencies:
+Python 3.10 or newer. Install the dependencies with:
 
 ```bash
 python -m pip install numpy scipy matplotlib soundfile scikit-learn pandas jupyter nbclient python-docx
 ```
 
-## Chạy
+## Run the notebook
 
-Mở thư mục `Lab05_2351260681_NguyenMinhPhuc` làm working directory rồi chạy `Lab5.ipynb` từ trên xuống. Notebook cũng nhận diện working directory là thư mục gốc repository. Tham số thí nghiệm nằm ở Task 0; seed ICA cố định để tái lập.
+Set `Lab05_2351260681_NguyenMinhPhuc` as the working directory and run `Lab5.ipynb` from the first cell onward. The notebook also detects when it is run from the repository root. Experiment parameters are grouped in Task 0, and a fixed ICA random seed supports reproducibility.
 
-## Phạm vi dữ liệu speaker
+## Speaker data and evaluation
 
-Dataset hiện có enrollment/test cho spk01, spk02 và spk03. Mỗi người có bốn enrollment, trong đó ba mẫu dùng train speaker verification và enrollment_04 được giữ làm dev; test gồm hai mẫu mỗi người. Vì không có manifest, notebook khám phá split từ tên file. Ma trận mixing dùng các giá trị ví dụ trong đề Lab 5.
+The current dataset contains enrollment and test recordings for spk01, spk02, and spk03. Each speaker has four enrollment recordings and two test recordings. Enrollment recording 04 is held out as development data for verification; the other three enrollment recordings train the verification models. Because the dataset has no manifest, the notebook derives the splits from filenames. The mixing matrices use the example values specified in Lab 5.
